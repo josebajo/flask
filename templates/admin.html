@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+{% with mensajes = get_flashed_messages() %}
+{% if mensajes %}
+{% for mensaje in mensajes %}
+    <p>{{ mensaje }}</p>
+{% endfor %}
+{% endif %}
+{% endwith %}
+
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/admin.css')}}">
+<body>
+    <div id="content">
+    <table>
+        <thread>
+            <tr id="encabezado">
+                <td>Id</td>
+                <td>Email</td>
+                <td>Código</td>
+                <td>Cantidad</td>
+                <td>Fecha</td>
+                <td>Editar o eliminar</td>
+            </tr>
+        </thread>
+        <tbody>
+            {% for solicitud in listado %}
+            <tr>
+                <td>{{ solicitud.0 }}</td>
+                <td>{{ solicitud.1 }}</td>
+                <td>{{ solicitud.2 }}</td>
+                <td>{{ solicitud.3 }}</td>
+                <td>{{ solicitud.4 }}</td>
+                <td><a href="/editar/{{solicitud.0}}">Editar</a>
+                    <a href="/eliminar/{{solicitud.0}}">Eliminar</a></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+</body>
+
+{% endblock %}

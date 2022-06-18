@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+    <main id="content-transferir">
+            
+        <form method="POST" action="/add" class="formulario" id="formulario">
+            
+            <!-- Grupo: Email-->
+            <div class="formulario__grupo" id="grupo__email">
+                <label for="email" class="formulario__label">Email de PayPal</label>
+                <div class="formulario__grupo-input">
+                    <input type="email" class="formulario__input" name="email" id="email" placeholder="tuemail@gmail.com">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">Debes introducir un correo electrónico válido</p>
+            </div>
+
+            <!-- Grupo: Código-->
+            <div class="formulario__grupo" id="grupo__codigo">
+                <label for="codigo" class="formulario__label">Codigo de PaysafeCard</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="codigo" id="codigo" placeholder="1234567891234567">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">El pin debe tener 16 dígitos</p>
+            </div>
+
+            <!-- Grupo: Cantidad-->
+            <div class="formulario__grupo" id="grupo__cantidad">
+                <label for="cantidad" class="formulario__label">Cantidad</label>
+                <div class="formulario__grupo-input">
+                    <input type="number" class="formulario__input" name="cantidad" id="cantidad" placeholder="20">
+                    <p>€</p>
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+                <p class="formulario__input-error">La cantidad máxima es de 999.99€</p>
+            </div>
+
+            <!-- Grupo: Datos-->
+            <div class="formulario__grupo" id="grupo__datos">
+                <label for="datos" class="formulario__label">Datos</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="datos" id="datos" placeholder="">
+                    <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                </div>
+            </div>
+
+            <!-- Grupo: Términos y condiciones-->
+            <div class="formulario__grupo" id="grupo__terminos">
+                <label class="formulario__label"> 
+                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los términos y condiciones
+                </label>
+            
+            </div>
+
+            <div class="formulario__mensaje-error" id="formulario__mensaje-error">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Hay algún error</b></p>
+            </div>
+            
+            <div class="formulario__recibes" id="formulario__recibes">
+                <p>Le serán enviados </p><p id="cantidad_enviamos"> </p><p>€</p>
+            </div>
+
+            <div class="formulario__grupo formulario__grupo-btn-enviar formulario__grupo-btn-enviar-2col" id="formulario__grupo-btn-enviar">
+                <button type="submit" class="formulario__btn" id="formulario__btn">Enviar</button>
+                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Su solicitud ha sido enviada correctamente</p>
+            </div>
+
+        </form>
+
+    </main>
+
+{% endblock %}

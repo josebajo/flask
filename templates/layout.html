@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tooMoney</title>
+    <link rel="icon" type="image/x-icon" href="{{url_for('static', filename='favicon.ico')}}">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='css/main.css')}}"/>
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='css/formulario.css')}}">
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='css/scrolls.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="{{url_for('static', filename='js/main.js')}}"></script>
+</head>
+
+<body>
+    <div id="navbar"> 
+        <a href="/"><img src="{{url_for('static', filename='img/logo-example.png')}}" height="50px"></a>
+        <div id="header-textos">
+            <a href="/"><button type="button" class="header-textos-box">Inicio</button></a>
+            <a href="ayuda"><button type="button" class="header-textos-box">Ayuda</button></a>
+            <a href="https://es.trustpilot.com/review/exconverters.com" target=”_blank”><button type="button" class="header-textos-box">Opiniones</button></a>
+        </div>
+        <a href=transferir><button type="button" class="btn btn-info">Transferir</button></a>
+    </div>
+
+
+    {% block body %}
+    {% endblock %}
+
+
+</body>
+
+<footer>
+    <div id="footer">
+        <ul id="col1">
+            <li><b>Too Money</b></li>
+            <br/>
+            <br/>
+            <li>Avilés, Asturias - 33401 
+                <br/> España</li>
+        </ul>
+
+        <ul id="col2">
+            <li><b>Contacto</b></li>
+            <br/>
+            <li>soporte@toomoney.com</li>
+            <li>644565656</li>
+            <li>Para más información vea: <i>ayuda</i></li>
+        </ul>
+
+        <ul id="col3">
+            <br/>
+            <li>Términos de uso 
+                <br/> y privacidad</li>
+        </ul>
+    </div>
+    <script src="{{url_for('static', filename='js/formulario.js')}}"></script>
+    <script src="https://kit.fontawesome.com/b2bcd6b805.js" crossorigin="anonymous"></script>
+</footer>
+
+</html>

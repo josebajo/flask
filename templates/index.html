@@ -1,0 +1,76 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='css/animacionTextos.css')}}"/>
+    <!--    <link rel='stylesheet' type='text/css' media='screen' href="{{url_for('static', filename='css/bootstrap.min.css')}}"/>-->
+    
+    <div id="hero">
+        <div id="hero_left">
+            <div id="hero__texto">
+                <h4>eXconverters</h4>
+                <h1>Comienza hoy a cambiar tu dinero</h1>
+                <h3>transferimos cash a dinero digital en el mismo día y con bajas comisiones</h3>
+            </div>
+            <div id="hero__accion">
+                <a href=transferir><button type="button" class="btn btn-info">Transferir</button></a>
+            </div>
+        </div>
+        <div id="hero__imagen">
+            <img src="{{url_for('static', filename='img/hero_paysafecard_paypal.png')}}" height="50px">
+        </div>
+    </div>
+
+    <div id="content">
+        
+        <div class="grid_index">
+            <div id="columnas_index">
+                
+                <div class="tarjeta background_1">
+                    <div class="tarjeta__cuerpo">
+                        <h4 class="tarjeta__titulo">Simple</h5>
+                            <p class="tarjeta__contenido">1º Introduzca su PIN en el apartado transferir<br/><br/> 2º Seleccione el método de depósito del saldo que prefiera <br/><br/> 
+                                3º Recibirá un email de confirmación y en pocas horas tendrá el dinero en su cuenta</p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div id="columnas_index">
+                        
+                        <div class="tarjeta background_2">
+                    <div class="tarjeta__cuerpo">
+                        <h4 class="tarjeta__titulo">Eficaz</h5>
+                            <p class="tarjeta__contenido">Nos comprometemos a que el dinero sea enviado a tu cuenta en menos de 24 horas desde que realizaste la solicitud, 
+                                si no se cumple, no pagas comisiones <br/> 
+                            Tenemos unas de las tarifas más bajas del mercado, las puedes consultar en el apartado "comisiones". ¡Estaremos encantados de que las compare!</p>
+                        </div>
+                    </div>
+            
+                </div>
+                <div id="columnas_index">
+                    <div class="tarjeta background_3">
+                    <div class="tarjeta__cuerpo">
+                        <h4 class="tarjeta__titulo">Soporte</h5>
+                            <p class="tarjeta__contenido">Ofrecemos un servicio de soporte por correo electrónico, Discord y WhatsApp
+                                <br/>Siempre tratamos de dar la mejor solución a vuestros problemas u ofreceros la información que necesitéis
+                                <br/>¡Y lo estamos cumpliendo!
+                                <br/>¿Alguna consulta? No te cortes y escríbenos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        <div id="index__progreso">
+            <h4>Progreso mensual</h4>
+            <p>Actualmente solo tenemos capacidad para transferir una cantidad determinada de dinero al mes. Si la barra de abajo llega al 100% no se admitirán nuevas operaciones hasta el mes siguiente.</p>
+            <div class="progress">
+                <div id="progreso_mensual" class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="{{url_for('static', filename='js/contador.js')}}"></script>
+
+    {% endblock %}
+    

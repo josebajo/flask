@@ -1,0 +1,15 @@
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+
+table {
+    width: 50%;
+}
+
+#encabezado{
+    font-weight: bold;
+    height: 50px;
+}

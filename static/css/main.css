@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+html{
+    /*background-color: #F6FFE2;*/
+    background-color: #FFFF;
+}
+
+/* - - - - - - NAVBAR - - - - - - */
+#navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    background-color: #FFFFFF;
+    /* Sombreado */
+    box-shadow: 0px 5px 40px #D8D8D8;
+    /* Estilo de texto */    
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+}
+
+#navbar #header-textos {
+    display: flex;
+    align-items: center;
+}
+
+.header-textos-box{
+    align-items: center;
+    margin: 0 10px;
+    background-color: white;
+    border-style: none;
+    font-size: 1.2em;
+    transition: color 0.4s ease;
+}
+.header-textos-box:hover{
+    color: #75b8d3;   
+}
+
+#navbar .btn-info {
+    background-color: #94e1ff;
+    border-style: none;
+    border-radius: 10px;
+    transition: all 0.4s ease;
+    height: 100%;
+}
+#navbar .btn-info:hover {
+    background-color: #96dbf7;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/* - - - - - - ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ - - - - - - */
+
+
+/* - - - - - - - FOOTER - - - - - - - */
+#footer {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
+}
+#footer ul{
+    list-style-type: none;
+    font-size: 1.1em;
+    padding: 0
+}
+/* - - - - - - ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ - - - - - - */
+
+
+/* - - - - - - INDEX: HERO - - - - - - */
+#hero{
+    height: 700px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5%;
+    font-family: 'Rubik', sans-serif;
+    background-image: url("../img/background.PNG");
+/*    background-image: linear-gradient(0deg, transparent 0%, transparent 25%,rgba(255,255,255, 0.77) 25%, rgba(255,255,255, 0.77) 36%,transparent 36%, transparent 100%),
+                    linear-gradient(135deg, transparent 0%, transparent 63%,rgba(255,255,255, 0.77) 63%, rgba(255,255,255, 0.77) 69%,transparent 69%, transparent 100%),
+                    linear-gradient(90deg, rgb(246,255,226),rgb(246,255,226));
+*/
+    background-size:contain;
+    background-position: -5em;
+    box-shadow:inset 0 0 0 2000px rgba(34, 34, 34, 0.8);
+}
+#hero_left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding-left: 6%;
+}
+#hero__texto{
+    width: 80%;
+}
+#hero h4{
+    text-align: left;
+    font-weight: 400;
+}
+#hero h1{
+    text-align: left;
+    font-size: 3.5em;
+    font-weight: 600;
+}
+#hero h3{
+    font-weight: 200;
+    font-size: 1.7em;
+    width: 80%;
+    margin-top: 15px;
+}
+
+#hero__accion{
+    width: 50%;
+    padding-top: 40px;
+}
+#hero__accion button{
+    width: 30%;
+    height: 50px;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 500;
+    background-color:#85d7f7;
+    border: none;
+}
+#hero__accion button:hover{
+    width: 30%;
+    height: 50px;
+    background-color:#b2e6fa;
+    border: none;
+}
+
+#hero__imagen{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 50px;
+}
+#hero__imagen img{
+    height: 80%;
+}
+
+/* - - - - - - ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ - - - - - - */
+
+
+/* - - - - - - AYUDA / FAQs - - - - - - */
+
+.pagina_titulo{
+    display: block;
+    text-align: center;
+    margin: 2.5%;
+    font-family: 'Rubik', sans-serif;
+}
+
+#container-faq{
+	margin: 5% 0;
+}
+
+#container-faq .card{
+	margin: 1% 0;
+}
+/* - - - - - - ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ - - - - - - */
+
+
+/* - - - - - - INDEX: TARJETAS - - - - - - */
+.grid_index {
+    margin-top: 5%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 10%;
+    justify-content: center;
+}
+
+.columnas_index {
+    display: block;
+    justify-content: center;
+}
+
+.tarjeta{
+    padding: 25px 40px 30px 40px;
+    width: 25rem;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 300;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px #9c9c9c;
+}
+
+.tarjeta__titulo {
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+    padding-bottom: 10px;
+}
+
+.tarjeta__contenido {
+    text-align: justify;
+}
+
+.background_1{
+    background-image: radial-gradient(circle at 48% 33%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 8%,transparent 8%, transparent 92%),
+                radial-gradient(circle at 28% 16%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 8%,transparent 8%, transparent 92%),
+                radial-gradient(circle at 34% 52%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                radial-gradient(circle at 92% 52%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                radial-gradient(circle at 77% 84%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                radial-gradient(circle at 75% 64%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 6%,transparent 6%, transparent 94%),
+                radial-gradient(circle at 70% 62%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                radial-gradient(circle at 55% 100%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                radial-gradient(circle at 12% 11%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                radial-gradient(circle at 35% 55%, rgba(255,255,255,0.04) 0%, rgba(255,255,255,0.04) 4%,transparent 4%, transparent 96%),
+                linear-gradient(45deg, rgb(26, 21, 192),rgb(171, 83, 239));
+    opacity: 0.9;
+}
+
+.background_2{
+    background-image: radial-gradient(circle at 80% 36%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 22% 10%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 17% 26%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 82% 24%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 55% 69%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 56% 67%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 90% 17%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 73% 24%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 80% 31%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 18% 25%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 36% 40%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 33% 21%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 34% 77%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 65% 41%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 29% 89%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 63% 6%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 54% 74%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 40% 31%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),
+                linear-gradient(45deg, rgb(106, 73, 228),rgb(19, 30, 181));
+    opacity: 0.9;
+}
+.background_3{
+    background-image: radial-gradient(circle at 91% 26%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 27% 63%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 59% 48%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 58% 65%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 55% 21%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 3%,transparent 3%, transparent 100%),
+                radial-gradient(circle at 88% 4%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 9% 23%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 40% 78%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 78% 5%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 11% 87%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 11% 24%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 18% 75%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 71% 80%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 7%,transparent 7%, transparent 100%),
+                radial-gradient(circle at 34% 79%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 9% 51%, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.03) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 46% 69%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 54% 90%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 55% 58%, rgba(255,255,255,0.01) 0%, rgba(255,255,255,0.01) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 95% 37%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                radial-gradient(circle at 9% 4%, rgba(255,255,255,0.02) 0%, rgba(255,255,255,0.02) 5%,transparent 5%, transparent 100%),
+                linear-gradient(135deg, rgb(249, 93, 202),rgb(11, 13, 179));
+    opacity: 0.85;
+}
+/* - - - - - - ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ ! ¡ - - - - - - */
+
+/* INDEX: cantidad mensual */
+#index__progreso{
+    margin: 10% 25%;
+    display: block;
+    justify-content: center;
+    padding: 30px 40px;
+    box-shadow: 0px 5px 20px gray;
+}
+
+
+/*  Media Queries   */
+@media screen and (max-width: 800px) {
+    #footer {
+        display: flex;
+        flex-direction: column;
+        padding: 100px 15px;
+    }
+    #footer ul{
+        list-style-type: none;
+        font-size: 1em;
+        padding: 10px 25px;
+    }
+    #footer br{
+        display: none;
+    }
+
+    .grid_index{
+        display: flex;
+        flex-direction: column;
+        padding: 100px 15%;
+        justify-content: center;
+    }
+
+/* (revisar, no funciona)
+    .columnas_index{
+        margin-bottom: 10px;
+    }
+*/
+
+    /* adaptar */
+    #container-faq{
+        margin: 4% 10%;
+    }
+    
+    #container-faq .card{
+        margin-bottom: 8%;
+    }
+
+}
+
+/*fin*/
