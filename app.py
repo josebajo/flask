@@ -86,6 +86,10 @@ def eliminar(id):
     cursor.close()
     return redirect(url_for('admin'))
 
+@app.route('/masinformacion')
+def masinformacion():
+    return "hola más info"
+
 # -- - -- - - -
 
 if __name__ == '__main__':
